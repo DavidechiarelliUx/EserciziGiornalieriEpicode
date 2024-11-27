@@ -1,11 +1,77 @@
-body{
-    background-color: aqua;
+header{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.titolo-pagina{
+.logo{
+    width: 15rem;
+}
+
+.container{
     display: flex;
     justify-content: center;
-    text-align: center;
-    color: beige;
-    font-size: 1.4rem;
+    background-color: rgb(248, 249, 222);
+    width: 100%;
+    border-top: 0.15rem solid;
+    border-color: rgb(246, 206, 125);
+    margin-top: 2rem;
 }
+.container h3 {
+    font-weight: 200;
+    color: rgb(34, 90, 92);
+}
+.title{
+    text-align: center;
+}
+
+main, footer {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.img-focaccia{
+    border-radius: 1rem;
+    box-shadow:2px 2px 4px #949191;
+}
+
+.recipes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-description{
+    color: #949191;
+}
+
+.featured{
+    border-left: 0.2rem solid;
+    border-color: antiquewhite;
+    padding-left: 1rem;
+}
+
+.featured h4{
+    font-weight: 300;
+    color: red;
+    margin-bottom: 0px;
+}
+
+a{
+    color: rgb(14, 135, 135);
+}
+
+article h2 {
+    font-weight: 200;
+}
+
+article div {
+    border-top: 0.1rem solid rgb(176, 232, 242);
+}
+
+article ul li {
+    padding-top: 1rem;
+}
+
