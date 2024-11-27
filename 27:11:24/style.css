@@ -46,7 +46,10 @@ main, footer {
 .image-description{
     color: #949191;
 }
-
+.video{
+   width: 80%;
+   height: 50%; 
+}
 .featured{
     border-left: 0.2rem solid;
     border-color: antiquewhite;
