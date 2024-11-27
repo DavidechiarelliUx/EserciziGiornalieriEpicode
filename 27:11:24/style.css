@@ -1,0 +1,11 @@
+body{
+    background-color: aqua;
+}
+
+.titolo-pagina{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: beige;
+    font-size: 1.4rem;
+}
