@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome/5.15.4">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./assets/img/logo.svg" alt="logo epicode" width="200px" height="100px">
+        <h3>EPICODE - IL BLOG DEI DEVELOPER </h3>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" title="Vai alla home">HOME</a></li>
+            <li><a href="#" title="Vai alla home">ARTICOLI</a></li>
+            <li><a href="#" title="Vai alla home">LAVORA CON NOI</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+      <article>
+        <h3>Come Creare un Template per i post</h3>
+        <p class="author"></i><i class="fa-solid fa-square-pen"></i> di Mario Rossi - <i class="fa-solid fa-clock"></i> pubblicato il 25-10-2020</p>
+        <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le<strong> parti comuni</strong> da applicare a tutte le pagine</p>
+        <p>Le varie pagine saranno quindi suddivise in : </p>
+        <ul>
+          <li>Contenuti di intestazione del tag <strong>&lt;header&gt</strong></li>
+          <li>Contenuti centrali variabili del tag <strong>&lt;main&gt</strong></li>
+          <li>Contenuti di fine pagina comuni, da inserire nel tag <strong>&lt;footer&gt</strong></li>
+        </ul>
+        <p>Formattazione del codice
+        <br>
+        il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong>selezionare con i CSS</strong>. Perciò i passi saranno : </p>
+        <ol>
+          <li>Progettare il markup assegnando ad ogni specifico tasto il tag appropriato</li>
+          <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+      </article>
+      <article>
+        <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.</p>
+        <table>
+          <caption>Diffusione dei CSS</caption>
+          <thead>
+              <tr>
+                  <th>Anno</th>
+                  <th>% di Utilizzo</th>
+                  <th>Supporto dei Browsers</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>2000</td>
+                  <td>20%</td>
+                  <td>17%</td>
+              </tr>
+              <tr>
+                  <td>2002</td>
+                  <td>35%</td>
+                  <td>22%</td>
+              </tr>
+              <tr>
+                  <td>2004</td>
+                  <td>45%</td>
+                  <td>42%</td>
+              </tr>
+              <tr>
+                  <td>2008</td>
+                  <td>80%</td>
+                  <td>51%</td>
+              </tr>
+              <tr>
+                  <td>2012</td>
+                  <td>100%</td>
+                  <td>76%</td>
+              </tr>
+          </tbody>
+      </table>
+      </article>
+      <article>
+        <p>Un Test di validazione potrà essere fatto tramite il tool online <a href="#" title="Link Esterno">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei veri developer come loro : </p>
+        <iframe src="https://www.youtube.com/embed/R62zsCN5JWQ" title="Cosa si impara DAVVERO in EPICODE? 🧠 Ep. 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+      <div>
+      <h3>Novità</h3>
+      <p>Vuoi rimanere aggiornato su altre novita del blog? iscriviti alla nostra Newsletter</p>
+      <form action="#" method="post"> 
+        <label for="email">Inserisci Email</label>
+        <input type="email" name="email" id="email" placeholder="Inserisci Email " required>
+        <button type="submit">Iscriviti !</button>
+      </form>
+    </div>
+    </main>
+    <aside>
+      <h3>Articoli Correlati</h3>
+          <div>
+            <a href="#" title="Validare il Codice HTML">Validare il Codice HTML</a>
+            <p><i class="fa-solid fa-tag"></i> Categoria : Develope</p>
+            <p class="data"><i class="fa-solid fa-calendar-days"></i> Data : 18-9-2020</p>
+          </div>
+          <div>
+            <a href="#" title="Correggere la Sintassi">Correggere la Sintassi</a>
+            <p><i class="fa-solid fa-tag"></i> Categoria : Develope</p>
+            <p class="data"><i class="fa-solid fa-calendar-days"></i> Data : 18-9-2020</p>
+          </div>
+          <div>
+            <a href="#" title="Meno Kb nella Pagina">Meno Kb nella Pagina</a>
+            <p><i class="fa-solid fa-tag"></i> Categoria : Ottimizzazione</p>
+            <p class="data"><i class="fa-solid fa-calendar-days"></i> Data : 18-9-2020</p>
+          </div>
+    </aside>
+    <footer>
+      <h4>Blog Epicode &copy;2023</h4>
+        <p>Testata Online di Mario Rossi, registrata con prot.n213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.         <a href="#" title="Link Email">info@epicode.school</a></p>
+
+    </footer>
+  </body>
+</html>
