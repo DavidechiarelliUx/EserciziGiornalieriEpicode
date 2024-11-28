@@ -21,7 +21,7 @@ header div h3{
 }
 
 nav{
-    margin-top: 3%;
+    margin-top: 8%;
 }
 nav ul li{
     margin-top: 1%;
@@ -31,24 +31,37 @@ nav ul li a{
     color: white;
     font-size: 20px;
     font-weight: 500;
+    display: inline-flex; 
+    align-items: center;
 }
-
+nav ul li a::before{
+    content:"=> ";
+    font-size: 15px;
+}
+nav ul li a::after{
+    content:"  <=";
+    font-size: 15px;
+}
 /* MAIN */
 main, aside{
     background-color: white;
     padding: 5%;
     box-sizing: border-box;
+    box-shadow: 2px 2px 4px #000000;
+    margin-bottom: 0;
+    overflow: hidden;
 }
 
 main{
     margin-top: 5%;
-    box-shadow: 2px 2px 4px #000000;
+    border-bottom: none;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 article h3{
     font-size: 35px;
     font-weight: 500;
     margin-bottom: 5%;
+    text-align: left;
 }
 
 .author{
@@ -96,6 +109,7 @@ table{
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 8%;
+    
 }
 caption{
     margin-top: 5%;
@@ -111,12 +125,13 @@ thead{
 th, td {
     text-align: center;
     vertical-align: middle;
-    padding: 20px; 
+    padding: 2vh; 
 }
 tbody tr:nth-child(odd){
     background-color: #ddd;
     border-top: 1px solid #a8a5a5; 
-    border-bottom: 1px solid #a8a5a5; 
+    border-bottom: 1px solid #a8a5a5;
+    
 }
 
 tbody{
@@ -148,7 +163,7 @@ div label{
 }
 
 input {
-    width: 70%;
+    width: 65%;
     padding: 5px;
     font-size: 20px;
     box-sizing: border-box;
@@ -166,9 +181,7 @@ background-color: rgba(62, 110, 204, 1);
 border: none;
 }
 /* ELEMENTI NELL' ASIDE */
-aside{
-    box-shadow: 2px 2px 4px #000000;
-}
+
 aside div{
     background-color: rgba(226, 226, 227, 1);
 }
