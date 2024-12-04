@@ -46,7 +46,7 @@
 // let num5 = 2;
 // let num6 = 6;
 
-// if(num5 === 8 || num6 === 8 || num5+num6 === 8){
+// if(num5 === 8 || num6 === 8 || num5+num6 === 8 || (num5 - num6)=== 8 || (num6 - num5 ) === 8){
 //   console.log("il valore di un numero o l'addizzione dei numeri è uguale a 8");
 // }else{
 //   console.log("l'addizzione o il valore di un numero non corrisponde a 8");
