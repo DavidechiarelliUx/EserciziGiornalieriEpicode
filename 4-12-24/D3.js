@@ -229,9 +229,22 @@ for (robot of starWarsCharacters){
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 
-console.log("çççççççççççççççççççççç")
 console.log(charactersNames);
 console.log(femaleCharacters);
+
+console.log('CHARACTERS BEFORE', charactersNames.length)
+
+for ( let i = 0; i< charactersNames.length; i++){
+  let obj = charactersNames[i];
+  for (let index = 0; index < femaleCharacters.length; index++) {
+    const element = femaleCharacters[index];
+    if (element.name === obj){
+
+      charactersNames.splice(i ,1);
+    }
+  }
+}
+console.log(charactersNames);
 
 
 
@@ -239,3 +252,11 @@ console.log(femaleCharacters);
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
+
+const random = Math.floor(Math.random()*starWarsCharacters.length)
+
+const obj=starWarsCharacters[random];
+
+console.log(obj);
+
+console.log("oggi siamo qui con " + (obj.name) + " che ha circa : " + (obj.birth_year) + " e i colori di color : " + (obj.eye_color) + " e la pelle di color : " + (obj.skin_color))
