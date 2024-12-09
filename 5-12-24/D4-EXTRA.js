@@ -6,6 +6,38 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
+function giveMeRandom(num) {
+    let arrayNum = [num];
+
+    for (let index = 0; index < num; index++) {
+        let randomNum = Math.floor(Math.random() * 10)
+
+        arrayNum.push(randomNum);
+    }
+    return arrayNum;
+}
+
+let number =giveMeRandom(7);
+console.log(number)
+function checkArray(num) {
+    
+    let sum = 0; 
+
+    for (let i = 0; i < num.length; i++) {
+        const element = num[i];
+        if (element > 5) {
+            console.log(element + " è maggiore di 5");
+            sum += element; 
+        } else {
+            console.log(element + " non è maggiore di 5");
+        }
+    }
+    console.log(sum + " la somma dei numeri dell'array magg di 5");
+    return sum; 
+}
+
+let result =checkArray(giveMeRandom(3))
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 2
@@ -15,6 +47,31 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+shoppingCart= [
+    {
+        price: 20,
+        name: "caramella",
+        id:"5464",
+        quantity:1,
+    }
+    {
+        price: 12,
+        name: "caramella-bubble",
+        id:"5465",
+        quantity:2,
+    }
+];
+
+function shoppingCartTotal(){
+    total = 0;
+
+    for (let index = 0; index < shoppingCart.length; index++) {
+        const element = shoppingCart[index];
+
+        
+        
+    }
+}
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "addToShoppingCart" che riceve un nuovo oggetto dello stesso tipo, lo aggiunge a "shoppingCart" e ritorna il nuovo numero totale degli elementi.

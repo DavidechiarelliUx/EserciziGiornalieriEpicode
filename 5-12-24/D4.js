@@ -30,9 +30,10 @@ function crazySum(num1 = 0 , num2 = 0) {
     }
 }
 
-let sum=crazySum(4 , 4);
+let sum=crazySum(4 , 9);
 
 console.log(sum);
+
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
@@ -52,9 +53,6 @@ function crazyDiff(num1=0, num2=19){
 
 let calcoloDiff = crazyDiff(119);
 console.log(calcoloDiff);
-
-
-
 
 
 /* ESERCIZIO 4
@@ -174,10 +172,6 @@ function cutString(string = ""){
 
     let newString = string.slice(1, -1);
 
-    
-
-    
-
     return newString;
 }
 
@@ -195,7 +189,7 @@ function giveMeRandom(n = 0) {
 
     for (let i = 0; i < n; i++) {
     
-        let randomNum = Math.floor(Math.random() * 11);
+        let randomNum = Math.floor(Math.random() * 10);
         casualNumber.push(randomNum); 
     }
 
