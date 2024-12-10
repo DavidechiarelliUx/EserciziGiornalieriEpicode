@@ -9,7 +9,7 @@ function concatStr(str1 , str2) {
   str1 = str1.slice(0 , 2);
   str2 = str2.slice(-3);
   nuovaStr = nuovaStr.concat(str1 , str2);
-  return nuovaStr.toLowerCase();
+  return nuovaStr.toUpperCase();
 }
 
 let stringa= concatStr("Ciao Mi Chiamo " , "Davide");
@@ -71,7 +71,7 @@ console.log(sommaArr);
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-function sommaReduce( numeri ) {
+function sommaReduce( numeri ) {
 
   let somma = 0;
 
