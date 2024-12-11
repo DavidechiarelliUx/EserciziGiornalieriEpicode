@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giorno 7</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script type="module" src="./script.js"></script> -->
+</head>
+<body>
+    <h1>DOM EVENT, FORM VALIDATION; BOM</h1>
+
+    <p>il metodo on click può essere utilizzato per invocare una certa funzione che gestisce un evento</p>
+    <h3>esistono tanti tipi di click : </h3>
+    <ul>
+        <li>eventi del mouse : click hover</li>
+        <li>eventi da tastiera</li>
+        <li>caricamento di un img</li>
+        <li>caricamento di una pagina</li>
+        <li>eventi sul campo dell'inpuit</li>
+        <li>invio di un form html</li>
+    </ul>
+
+    <p>tutti gli eventi iniziano con on ( onclick );</p>
+
+    <h3>&lt;h2&gt;sintassi : &lt;button onclick=&quot;funzione()&quot;&gt;Clicca&lt;/button&gt;&lt;/h2&gt;</h3>
+
+    <p>scopo principale del metodo è assegnare ad un elemento selezionato un certo evento : </p>
+    <h3>elemento.addEventListner(evento,funzione)</h3>
+    
+    <p>Esempio di tre eventi diversi con i bottoni : </p>
+    <button onclick="myClick()">Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+
+    <p>Consigliato usare addEventListener.</p>
+
+    <h2>MANIPOLAZIONE ELEMENTI DEL FORM</h2>
+
+    <p>javascript utilizza il form per metodi e gestione di elementi del form ,</p>
+
+    <form action="">
+        <input type="text" name="name" placeholder="inserisci nome">
+        <input type="text" name="lastname" placeholder="inserici cognome">
+        <input type="text" name="citta" placeholder="inserisci città">
+        <button type="submit">click</button>
+    </form>
+
+    <p>sull oggetto form possiamo attribuire due metodi principali : reset() e submit() </p>
+    <script src="./script.js"></script>
+</body>
+</html>

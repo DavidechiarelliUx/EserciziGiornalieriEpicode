@@ -232,6 +232,70 @@
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
 
+    
+//     function generateTable() {
+//   let div = document.querySelector("#tableArea");
+//   let table = document.createElement("table");
+
+  
+//   let arrey = [
+//     {
+//       img: "https://", 
+//       nome: "test",
+//       quantità: 1,
+//       prezzo: 25,
+//     },
+//     {
+//       img: "https://", 
+//       nome: "test",
+//       quantità: 1,
+//       prezzo: 25,
+//     },
+//   ];
+
+//   let headerRow = document.createElement("tr");
+//   let headers = ["Image", "Name", "Quantity", "Price"];
+//   headers.forEach((text) => {
+//     let th = document.createElement("th");
+//     th.textContent = text;
+//     headerRow.appendChild(th);
+//   });
+//   table.appendChild(headerRow);
+
+
+//   for (let i = 0; i < arrey.length; i++) {
+//     let tr = document.createElement("tr");
+
+    
+//     let imgTd = document.createElement("td");
+//     imgTd.innerHTML = `<img src="${arrey[i].img}" alt="${arrey[i].nome}" width="50"/>`;
+//     tr.appendChild(imgTd);
+
+    
+//     let nameTd = document.createElement("td");
+//     nameTd.textContent = arrey[i].nome;
+//     tr.appendChild(nameTd);
+
+    
+//     let quantityTd = document.createElement("td");
+//     quantityTd.textContent = arrey[i].quantità;
+//     tr.appendChild(quantityTd);
+
+    
+//     let priceTd = document.createElement("td");
+//     priceTd.textContent = `$${arrey[i].prezzo}`;
+//     tr.appendChild(priceTd);
+
+
+//     table.appendChild(tr);
+//   }
+
+
+//   div.appendChild(table);
+// }
+
+// generateTable();
+
 const generateTable = function () {
         let areaTab = document.getElementById("tableArea");
 
@@ -325,14 +389,26 @@ const generateTable = function () {
     });
 };
 
-hideAllImages();
+// hideAllImages();
 
 
       /* EXTRA ESERCIZIO 15
       Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
     */
 
-      const changeColorWithRandom = function () {}
+      const changeColorWithRandom = function () {
+        let h2 = document.querySelector("h2#changeMyColor");
+        h2.onclick = function (){
+          let r = Math.floor(Math.random()*255);
+          let g =Math.floor(Math.random()*255);
+          let b = Math.floor(Math.random()*255);
+
+        h2.style.color = "rgb(" + r + ", " + g + ", " + b + ")";
+        }
+
+      }
+
+      changeColorWithRandom()
     </script>
   </body>
 </html>
