@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Calendario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- calendario -->
+        <h1></h1>
+        <div id="calendar">
+            
+        </div>
+        <!-- form per meeting -->
+        <h2>Add Meeting</h2>
+
+        <div id="addMeeting">
+            <div>
+                <h4>meeting day</h4>
+                <span id="newMeetingDay">Click on a day</span>
+            </div>
+            <form action="">
+                <div>
+                    <h4>meeting time</h4>
+                    <input type="time" name="time" id="newMeetingTime" required>
+                </div>
+                <div>
+                    <h4>meeting name</h4>
+                    <input type="text" name="text" placeholder="insert a name for the meeting" id="newMeetingName">
+                </div>
+                <div>
+                    <h4>add</h4>
+                    <button type="submit">Save Meeting</button>
+                </div>
+            </form>
+        </div>
+        <!-- lista degli appuntamenti salvati -->
+        <div id="appointments">
+            <h2>Appuntamenti del giorno</h2>
+            <ul id="appointmentsList">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
