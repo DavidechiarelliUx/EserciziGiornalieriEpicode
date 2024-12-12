@@ -1,3 +1,40 @@
 body{
     background-color: antiquewhite;
 }
+
+*{
+    box-sizing:border-box;
+}
+
+#container{
+    max-width: 600px;
+    margin: auto;
+}
+
+#tabellone{
+    background-color: wheat;
+}
+
+.numberCell{
+    display: inline-block;
+    width: 10%;
+    height: 50px;
+    border: 1px solid #131334;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    background-color: tan;
+}
+
+.numberCell:hover{
+    background-color: tomato;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: brown;
+    color: white;
+    margin-top: 10px;
+}
