@@ -1,0 +1,30 @@
+
+main{
+    max-width: 780px;
+    margin: auto;
+    text-align: center;
+}
+
+#main-board{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#main-board div.cella{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#randBtn{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.estratto{
+    background-color: aquamarine;
+}
