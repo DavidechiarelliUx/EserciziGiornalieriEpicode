@@ -225,6 +225,15 @@ footer{
         padding: 12px 5rem;
     }
 
+    fieldset{
+        
+    }
+    input{
+        padding: 10px 20%;
+    }
+    button{
+        padding: 10px;
+    }
     section h2{
         background-color: #969494;
 
@@ -268,7 +277,7 @@ footer{
     }
     article iframe, article section{
         display: inline-block;
-        max-width: 40%;
+        max-width: 45%;
         vertical-align: middle;
         margin-inline:auto;
         height: 200px;
