@@ -281,6 +281,7 @@ footer{
     aside div{
         display: inline-block;
         height: 150px;
+        width: 33%;
         margin-inline:auto ;
         vertical-align: top;
         box-sizing: border-box;
@@ -292,7 +293,6 @@ footer{
     }
     aside div p{
         display: block;
-        
     }
     footer p, address{  
         max-width:60%;
